@@ -17,7 +17,7 @@ WIN = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
 pygame.display.set_caption("Obstacle Game")
 
 pipe_img = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","pipe.png")).convert_alpha())
-bg_img_1 = pygame.transform.scale(pygame.image.load(os.path.join("imgs","landscape_day.png")).convert_alpha(), (700, 700))
+bg_img_1 = pygame.transform.scale(pygame.image.load(os.path.join("imgs","landscape_day.png")).convert_alpha(), (1080, 1080))
 bg_img_2 = pygame.transform.scale(pygame.image.load(os.path.join("imgs","landscape_night.png")).convert_alpha(), (1080, 1080))
 bird_images = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","gbird.png")))
 base_img = pygame.transform.scale(pygame.image.load(os.path.join("imgs","basee.png")),(270,100))
