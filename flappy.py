@@ -17,8 +17,9 @@ WIN = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
 pygame.display.set_caption("Obstacle Game")
 
 pipe_img = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","pipe.png")).convert_alpha())
-bg_img = pygame.transform.scale(pygame.image.load(os.path.join("imgs","landscape_day.png")).convert_alpha(), (600, 600))
-bird_images = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","pla.png")))
+bg_img_1 = pygame.transform.scale(pygame.image.load(os.path.join("imgs","landscape_day.png")).convert_alpha(), (600, 600))
+bg_img_2 = pygame.transform.scale(pygame.image.load(os.path.join("imgs","landscape_night.png")).convert_alpha(), (600, 600))
+bird_images = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","gbird.png")))
 base_img = pygame.transform.scale(pygame.image.load(os.path.join("imgs","basee.png")),(270,100))
 
 gen = 0
@@ -167,7 +168,7 @@ def draw_window(win, birds, pipes, base, score, gen, pipe_ind):
 
     if gen == 0:
         gen = 1
-    win.blit(bg_img, (0,0))
+    win.blit(bg_img_2, (0,0))
 
     for pipe in pipes:
         pipe.draw(win)
