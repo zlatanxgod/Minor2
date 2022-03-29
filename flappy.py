@@ -168,7 +168,7 @@ def draw_window(win, birds, pipes, base, score, gen, pipe_ind):
 
     if gen == 0:
         gen = 1
-    win.blit(bg_img_2, (0,0))
+    win.blit(bg_img_1, (0,0))
 
     for pipe in pipes:
         pipe.draw(win)
@@ -333,3 +333,4 @@ if __name__ == '__main__':
     local_dir = os.path.dirname(__file__)
     config_path = os.path.join(local_dir, 'config-feedforward.txt')
     run(config_path)
+#%%
